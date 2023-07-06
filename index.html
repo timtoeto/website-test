@@ -1,33 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aesthetic Website</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Virtual Reality Website</title>
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <a-scene>
+    <!-- VR Scene Content -->
+    <a-sky color="#e5e5e5"></a-sky>
+    <a-entity position="0 1.6 0">
+      <a-camera></a-camera>
+    </a-entity>
 
-  <main>
-    <section>
-      <h1>Welcome to My Aesthetic Website!</h1>
-      <p>This is a sample paragraph.</p>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2023 Aesthetic Website. All rights reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
+    <!-- Cube Entity -->
+    <a-entity geometry="primitive: box" material="color: #FF5722" position="0 1.6 -3"></a-entity>
+  </a-scene>
 </body>
 </html>
