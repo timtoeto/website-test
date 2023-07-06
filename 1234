@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Virtual Reality Website</title>
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+</head>
+<body>
+  <a-scene>
+    <!-- VR Scene Content -->
+    <a-sky color="#e5e5e5"></a-sky>
+    <a-entity position="0 1.6 0">
+      <a-camera></a-camera>
+    </a-entity>
+
+    <!-- Cube Entity -->
+    <a-entity geometry="primitive: box" material="color: #FF5722" position="0 1.6 -3"></a-entity>
+  </a-scene>
+</body>
+</html>
